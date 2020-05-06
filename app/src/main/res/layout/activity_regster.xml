@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".Regster">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo2"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:text="تسجيل الدخول الى حسابك"
+        android:textColor="#3D1458"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="49dp"
+        android:text="ليس لديك حساب؟"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="150dp"
+        android:text="إنشاء حساب"
+        android:textColor="#F52D56"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="195dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:inputType="textPersonName"
+        android:textDirection="rtl"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:background="@drawable/shape2"
+        android:hint="لبنى سفيان شاهين" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="40dp"
+        android:text="الاسم بالكامل"
+        android:backgroundTintMode="src_in"
+        android:background="#fff"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:textDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/shapepassword"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:hint="رقم الجوال" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:textDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/shapepassword"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:hint="البريد الالكتروني" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:textDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="365dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/shapepassword"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_showpass"
+        android:hint="  كلمة المرور" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/shape"
+        android:text="تسجيل دخول"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

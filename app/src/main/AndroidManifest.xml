@@ -9,15 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TamAlHajz"></activity>
+        <activity android:name=".BookmarksActivity"></activity>
+        <activity android:name=".TamAlHajz" />
         <activity android:name=".Alhojozat" />
-        <activity android:name=".Regster">
-
-        </activity>
+        <activity android:name=".Regster"></activity>
         <activity android:name=".SignUPAct" />
         <activity android:name=".LoginAct" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".SplachAct" >
+        <activity android:name=".SplachAct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

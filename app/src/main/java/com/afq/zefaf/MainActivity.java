@@ -39,27 +39,27 @@ public class MainActivity extends AppCompatActivity {
         profileInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              /*  Intent intent = new Intent(MainActivity.this,ProfileInfo.class);
-                startActivity(intent);*/
+                Intent intent = new Intent(MainActivity.this, ProfileInfo.class);
+                startActivity(intent);
             }
         });
 
         MenuList();
     }
 
-    public void MenuList(){
+    public void MenuList() {
 
 
         ArrayList<MenuItems> data = new ArrayList<>();
 
-        data.add(new MenuItems(R.drawable.ic_bookmarks,getString(R.string.bookmarks)));
-        data.add(new MenuItems(R.drawable.ic_calender,getString(R.string.reservations)));
-        data.add(new MenuItems(R.drawable.ic_credit_card,getString(R.string.credit_card)));
-        data.add(new MenuItems(R.drawable.ic_language,getString(R.string.language)));
-        data.add(new MenuItems(R.drawable.ic_terms,getString(R.string.terms_of_service)));
-        data.add(new MenuItems(R.drawable.ic_policy,getString(R.string.privacy_policy)));
-        data.add(new MenuItems(R.drawable.ic_help_center,getString(R.string.help_center)));
-        data.add(new MenuItems(R.drawable.ic_info,getString(R.string.about_us)));
+        data.add(new MenuItems(R.drawable.ic_bookmarks, getString(R.string.bookmarks)));
+        data.add(new MenuItems(R.drawable.ic_calender, getString(R.string.reservations)));
+        data.add(new MenuItems(R.drawable.ic_credit_card, getString(R.string.credit_card)));
+        data.add(new MenuItems(R.drawable.ic_language, getString(R.string.language)));
+        data.add(new MenuItems(R.drawable.ic_terms, getString(R.string.terms_of_service)));
+        data.add(new MenuItems(R.drawable.ic_policy, getString(R.string.privacy_policy)));
+        data.add(new MenuItems(R.drawable.ic_help_center, getString(R.string.help_center)));
+        data.add(new MenuItems(R.drawable.ic_info, getString(R.string.about_us)));
 
         CustomListAdapter adapt = new CustomListAdapter(this, R.layout.menu_list_item, data);
 
@@ -69,13 +69,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 //                if (i == 0) {
-//                    Intent intent = new Intent(MainActivity.this, EditProfile.class);
+//                    Intent intent = new Intent(MainActivity.this, Bookmarks.class);
 //                    startActivity(intent);
 //                }
-//                if (i == 1) {
-//                    Intent intent = new Intent(Account.this, About.class);
-//                    startActivity(intent);
-//                }
+                if (i == 1) {
+                    Intent intent = new Intent(MainActivity.this, About.class);
+                    startActivity(intent);
+                }
             }
         });
     }

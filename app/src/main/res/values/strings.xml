@@ -8,6 +8,8 @@
     <string name="privacy_policy">Privacy Policy</string>
     <string name="help_center">Help Center</string>
     <string name="about_us">About Us</string>
+    <string name="current_res">Current</string>
+    <string name="previous_res">Previous</string>
 
 
 </resources>

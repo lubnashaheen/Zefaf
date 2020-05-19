@@ -37,7 +37,7 @@ public class BookmarksAdapter extends RecyclerView.Adapter<BookmarksAdapter.Book
     @NonNull
     @Override
     public BookmarkViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_bookmark, null);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_bookmark, parent, false);
         BookmarkViewHolder holder = new BookmarkViewHolder(view, listener);
         return holder;
     }
@@ -91,7 +91,7 @@ public class BookmarksAdapter extends RecyclerView.Adapter<BookmarksAdapter.Book
                     if (listener != null) {
                         int position = getAdapterPosition();
                         if (position != RecyclerView.NO_POSITION) {
-                            listener.OnItemClick(position);
+                            listener.onBookmarkClick(position);
                         }
                     }
                 }

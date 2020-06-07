@@ -11,5 +11,10 @@
     <string name="current_res">Current</string>
     <string name="previous_res">Previous</string>
 
+    <string name="no_reservations">You don\'t have any reservations</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="logout">Logout</string>
 
 </resources>

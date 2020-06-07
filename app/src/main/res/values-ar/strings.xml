@@ -11,4 +11,10 @@
     <string name="about_us">عن التطبيق</string>
     <string name="current_res">الحالية</string>
     <string name="previous_res">السابقة</string>
+
+    <string name="no_reservations">لا توجد لديك أي حجوزات</string>
+    <string name="full_name">الاسم بالكامل</string>
+    <string name="email_address">البريد الإلكتروني</string>
+    <string name="mobile_number">رقم الموبايل</string>
+    <string name="logout">تسجيل الخروج</string>
 </resources>

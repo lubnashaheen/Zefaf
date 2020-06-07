@@ -5,8 +5,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.afq.zefaf.Model.Bookmarks;
+import com.afq.zefaf.Model.Bookmark;
 import com.afq.zefaf.R;
 
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class BookmarksAdapter extends RecyclerView.Adapter<BookmarksAdapter.BookmarkViewHolder> {
-    ArrayList<Bookmarks> bookmarks = new ArrayList<>();
+    ArrayList<Bookmark> bookmarks = new ArrayList<>();
     OnItemClickListener listener;
 
 
@@ -30,7 +31,7 @@ public class BookmarksAdapter extends RecyclerView.Adapter<BookmarksAdapter.Book
         this.listener = listener;
     }
 
-    public BookmarksAdapter(ArrayList<Bookmarks> bookmarks) {
+    public BookmarksAdapter(ArrayList<Bookmark> bookmarks) {
         this.bookmarks = bookmarks;
     }
 
@@ -44,7 +45,7 @@ public class BookmarksAdapter extends RecyclerView.Adapter<BookmarksAdapter.Book
 
     @Override
     public void onBindViewHolder(@NonNull BookmarkViewHolder holder, int position) {
-        Bookmarks bm = bookmarks.get(position);
+        Bookmark bm = bookmarks.get(position);
         //set yo shit
         holder.mImgVenueImage.setImageResource(bm.getVenuePic());
         holder.mTextView9.setText(bm.getVenueRating());

@@ -1,6 +1,6 @@
 package com.afq.zefaf.Model;
 
-public class Bookmarks {
+public class Bookmark {
 
     private int venuePic;
     private String venueName;
@@ -8,10 +8,10 @@ public class Bookmarks {
     private String venueRating;
     private boolean isBookmark;
 
-    public Bookmarks() {
+    public Bookmark() {
     }
 
-    public Bookmarks(int venuePic, String venueName, String venueAddress, String venueRating, boolean isBookmark) {
+    public Bookmark(int venuePic, String venueName, String venueAddress, String venueRating, boolean isBookmark) {
         this.venuePic = venuePic;
         this.venueName = venueName;
         this.venueAddress = venueAddress;

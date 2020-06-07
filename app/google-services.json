@@ -1,0 +1,418 @@
+{
+  "project_info": {
+    "project_number": "764843213026",
+    "firebase_url": "https://fir-testlubnaabdalla.firebaseio.com",
+    "project_id": "fir-testlubnaabdalla",
+    "storage_bucket": "fir-testlubnaabdalla.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764843213026:android:fa6993ff34d196f2cc9ebb",
+        "android_client_info": {
+          "package_name": "com.afq.zefaf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764843213026-ndnh3mj4h11j2o049suqg8se4qm44rvf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.afq.zefaf",
+            "certificate_hash": "6603df2893893388861c60c8851144203c928a9d"
+          }
+        },
+        {
+          "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGKN2jaIFPEw9THdt6BTJzaiXWTRrag5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764843213026:android:ffcec8e5bc5d103acc9ebb",
+        "android_client_info": {
+          "package_name": "lubna.firebase.firebasetestlubnaabdalla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764843213026-nf7j6h4mhvuc9rn9nllq3q5kq6lkmdci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lubna.firebase.firebasetestlubnaabdalla",
+            "certificate_hash": "bf7e92ef4026eb926aafeaf1eec48d955c0f878b"
+          }
+        },
+        {
+          "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGKN2jaIFPEw9THdt6BTJzaiXWTRrag5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764843213026:android:4d330a887afa400bcc9ebb",
+        "android_client_info": {
+          "package_name": "lubna.proiectandroid.com.abdallhhomeworkfierbaselistview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764843213026-9721apn6ekrjkbelugfkaj2duhvn0vd5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lubna.proiectandroid.com.abdallhhomeworkfierbaselistview",
+            "certificate_hash": "6603df2893893388861c60c8851144203c928a9d"
+          }
+        },
+        {
+          "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGKN2jaIFPEw9THdt6BTJzaiXWTRrag5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764843213026:android:da040e29b70e58c3cc9ebb",
+        "android_client_info": {
+          "package_name": "lubna.proiectandroid.com.abdlubnatic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764843213026-5vnopmqk0j16oq7gin0807llotpji4j9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lubna.proiectandroid.com.abdlubnatic",
+            "certificate_hash": "6603df2893893388861c60c8851144203c928a9d"
+          }
+        },
+        {
+          "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGKN2jaIFPEw9THdt6BTJzaiXWTRrag5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764843213026:android:da4c0348e762851dcc9ebb",
+        "android_client_info": {
+          "package_name": "lubna.proiectandroid.com.fierbaserealtimeabdallha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764843213026-lbmnvkb6sqaup6bv99k6vr7t06soalrk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lubna.proiectandroid.com.fierbaserealtimeabdallha",
+            "certificate_hash": "6603df2893893388861c60c8851144203c928a9d"
+          }
+        },
+        {
+          "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGKN2jaIFPEw9THdt6BTJzaiXWTRrag5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764843213026:android:0acd4e3092f9ba41cc9ebb",
+        "android_client_info": {
+          "package_name": "lubna.proiectandroid.com.fierbasestorgelubnaabd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764843213026-m8366vidanpsrv1pengb1go0p2lk0k7e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lubna.proiectandroid.com.fierbasestorgelubnaabd",
+            "certificate_hash": "6603df2893893388861c60c8851144203c928a9d"
+          }
+        },
+        {
+          "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGKN2jaIFPEw9THdt6BTJzaiXWTRrag5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764843213026:android:59b8aa8c3f47286ccc9ebb",
+        "android_client_info": {
+          "package_name": "lubna.proiectandroid.com.firstprojcetkotlinfierbase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764843213026-o92cgkobu9umfcg22peuon1a78t9hdec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lubna.proiectandroid.com.firstprojcetkotlinfierbase",
+            "certificate_hash": "6603df2893893388861c60c8851144203c928a9d"
+          }
+        },
+        {
+          "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGKN2jaIFPEw9THdt6BTJzaiXWTRrag5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764843213026:android:2d8e99f9db5bf8d1cc9ebb",
+        "android_client_info": {
+          "package_name": "lubna.proiectandroid.com.galleryabdlubna"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764843213026-ojm07hvdlsg63dvu9nuatmusu7qnh82p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lubna.proiectandroid.com.galleryabdlubna",
+            "certificate_hash": "6603df2893893388861c60c8851144203c928a9d"
+          }
+        },
+        {
+          "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGKN2jaIFPEw9THdt6BTJzaiXWTRrag5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764843213026:android:cd76c0873d05f2a1cc9ebb",
+        "android_client_info": {
+          "package_name": "lubna.proiectandroid.com.projectaltakhrg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764843213026-8qd4ohke4k30r5d7tmfb9c5trsedd631.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lubna.proiectandroid.com.projectaltakhrg",
+            "certificate_hash": "6603df2893893388861c60c8851144203c928a9d"
+          }
+        },
+        {
+          "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGKN2jaIFPEw9THdt6BTJzaiXWTRrag5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764843213026:android:6867f01fb5193e6dcc9ebb",
+        "android_client_info": {
+          "package_name": "lubna.proiectandroid.com.tictacabdalahlubna"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764843213026-8kibjvjlljl1ji57ev87t6359sd3mfo3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lubna.proiectandroid.com.tictacabdalahlubna",
+            "certificate_hash": "6603df2893893388861c60c8851144203c928a9d"
+          }
+        },
+        {
+          "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGKN2jaIFPEw9THdt6BTJzaiXWTRrag5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764843213026:android:aff3b4ed586c0e1ccc9ebb",
+        "android_client_info": {
+          "package_name": "lubna.proiectandroid.com.tictacabdlubnafinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764843213026-18s4rasgb32jre7sjne62osjbdfbanoi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lubna.proiectandroid.com.tictacabdlubnafinal",
+            "certificate_hash": "6603df2893893388861c60c8851144203c928a9d"
+          }
+        },
+        {
+          "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGKN2jaIFPEw9THdt6BTJzaiXWTRrag5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764843213026-5u9b9ma8b28k59upiqb4sf0i3pcrju74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

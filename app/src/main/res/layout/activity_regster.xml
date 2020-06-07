@@ -8,7 +8,7 @@
     tools:context=".Regster">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageViewlogo"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,38 +28,15 @@
         android:textStyle="bold"
         android:textSize="20sp"/>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="49dp"
-        android:text="ليس لديك حساب؟"
-        android:textSize="15sp"
-        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="150dp"
-        android:text="إنشاء حساب"
-        android:textColor="#F52D56"
-        android:textSize="18sp"
-        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="195dp"
+        android:layout_marginTop="170dp"
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
         android:inputType="textPersonName"
@@ -67,29 +44,18 @@
         android:padding="10dp"
         android:drawableLeft="@drawable/ic_person"
         android:background="@drawable/shape2"
-        android:hint="لبنى سفيان شاهين" />
+        android:hint="الاسم الكامل" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="185dp"
-        android:layout_marginEnd="40dp"
-        android:text="الاسم بالكامل"
-        android:backgroundTintMode="src_in"
-        android:background="#fff"
-        android:textSize="20sp" />
+
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editphone"
         android:textDirection="rtl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="255dp"
+        android:layout_marginTop="240dp"
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
         android:background="@drawable/shapepassword"
@@ -99,13 +65,13 @@
         android:hint="رقم الجوال" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editemail"
         android:textDirection="rtl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="310dp"
+        android:layout_marginTop="305dp"
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
         android:background="@drawable/shapepassword"
@@ -115,13 +81,13 @@
         android:hint="البريد الالكتروني" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/editpassword"
         android:textDirection="rtl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="365dp"
+        android:layout_marginTop="360dp"
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
         android:background="@drawable/shapepassword"
@@ -131,7 +97,7 @@
         android:hint="  كلمة المرور" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -139,10 +105,18 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="18dp"
         android:layout_marginEnd="18dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="55dp"
         android:background="@drawable/shape"
         android:text="تسجيل دخول"
         android:textColor="#fff"
         android:textSize="20sp"
         android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
 </RelativeLayout>

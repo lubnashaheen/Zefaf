@@ -16,25 +16,25 @@
             android:layout_centerHorizontal="true"
             app:srcCompat="@drawable/backlogin" />
 
-        <Button
+
+
+    <Button
         android:id="@+id/buttonlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="18dp"
+        android:layout_marginStart="14dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="18dp"
-        android:layout_marginBottom="100dp"
-        android:background="@drawable/shape"
+        android:layout_marginBottom="93dp"
+        android:background="@drawable/shape2"
         android:text="تسجيل دخول"
-        android:textColor="#fff"
-        android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textColor="#F52D56" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttondife"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -43,10 +43,12 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="18dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/shape2"
-        android:text="تسجيل دخول"
-        android:textColor="#F52D56"/>
-
+        android:backgroundTint="@color/accent"
+        android:text="تصفح كضيف"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

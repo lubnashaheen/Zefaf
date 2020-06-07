@@ -44,6 +44,8 @@ dependencies {
     //Storage
     implementation 'com.google.firebase:firebase-storage:19.1.1'
     //Auth
+    implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.google.firebase:firebase-auth:19.3.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
 }

@@ -14,11 +14,21 @@ public class LoginAct extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Button button=findViewById(R.id.buttonlogin);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button button1=findViewById(R.id.buttonlogin);
+        Button button2=findViewById(R.id.buttondife);
+
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(LoginAct.this,Regster.class);
+                Intent intent =new Intent(LoginAct.this,SignUPAct.class);
+                startActivity(intent);
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(LoginAct.this,ActivityMap.class);
                 startActivity(intent);
             }
         });

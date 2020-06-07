@@ -41,7 +41,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textnewaccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -54,7 +54,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editTextphone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -83,7 +83,7 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextpass"
         android:textDirection="rtl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
         android:hint="  كلمة المرور" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -115,7 +115,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvforgetpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -124,4 +124,13 @@
         android:text="هل نسيت كلمة المرور؟"
         android:textSize="20sp"
         android:textColor="#F52D56"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
 </RelativeLayout>

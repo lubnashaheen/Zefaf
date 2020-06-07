@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.afq.zefaf.Model.MenuItems;
+import com.afq.zefaf.ProfileInfo;
 import com.afq.zefaf.R;
 
 import java.util.ArrayList;
@@ -31,6 +32,7 @@ public class CustomListAdapter extends ArrayAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View V = LayoutInflater.from(context).inflate(resource,null);
+
 
         TextView txttitle = V.findViewById(R.id.txttitle);
         ImageView imgicon = V.findViewById(R.id.imgicon);

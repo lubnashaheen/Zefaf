@@ -1,4 +1,4 @@
-package com.afq.zefaf;
+package com.afq.zefaf.Model;
 
 public class Hajz {
     private String succss;

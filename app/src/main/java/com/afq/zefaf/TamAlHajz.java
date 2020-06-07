@@ -10,5 +10,8 @@ public class TamAlHajz extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tam_al_hajz);
+
+
+
     }
 }

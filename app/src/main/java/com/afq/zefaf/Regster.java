@@ -33,7 +33,6 @@ import static androidx.core.content.ContextCompat.startActivity;
 public class Regster extends AppCompatActivity {
 
     ProgressBar progressBar;
-    private ImageView imageViewlogo;
     private EditText editname;
     private EditText editphone;
     private EditText editemail;
@@ -41,12 +40,13 @@ public class Regster extends AppCompatActivity {
     private Button buttonlogin;
     FirebaseAuth firebaseAuth;
 
+    String mobile;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_regster);
 
-        imageViewlogo = findViewById(R.id.imageViewlogo);
         editname = findViewById(R.id.editname);
         editphone = findViewById(R.id.editphone);
         editemail = findViewById(R.id.editemail);
@@ -89,7 +89,7 @@ public class Regster extends AppCompatActivity {
         }
 
         if (password.length() < 6) {
-            editpassword.setError("Minimum lenght of password should be 6");
+            editpassword.setError("Minimum length of password is be 6");
             editpassword.requestFocus();
             return;
         }
@@ -104,7 +104,8 @@ public class Regster extends AppCompatActivity {
             editphone.setError("Phone is required");
             editphone.requestFocus();
             return;
-        }
+        }else
+            mobile = phone;
         if(editphone.length() < 10){
             editphone.setError("Enter a valid mobile");
             editphone.requestFocus();
@@ -114,8 +115,6 @@ public class Regster extends AppCompatActivity {
 
         progressBar.setVisibility(View.VISIBLE);
 
-
-
         firebaseAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -123,7 +122,9 @@ public class Regster extends AppCompatActivity {
                 progressBar.setVisibility(View.GONE);
                 if (task.isSuccessful()) {
                     finish();
-                    startActivity(new Intent(Regster.this, VerifyPhoneActivity.class));
+                    Intent intent = new Intent(Regster.this, VerifyPhoneActivity.class);
+                    intent.putExtra("mobile",mobile);
+                    startActivity(intent);
                 } else {
 
                     if (task.getException() instanceof FirebaseAuthUserCollisionException) {

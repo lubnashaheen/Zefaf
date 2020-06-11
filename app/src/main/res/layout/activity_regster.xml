@@ -43,7 +43,7 @@
         android:textDirection="rtl"
         android:padding="10dp"
         android:drawableLeft="@drawable/ic_person"
-        android:background="@drawable/shape2"
+        android:background="@drawable/selector_edittext"
         android:hint="الاسم الكامل" />
 
 
@@ -58,7 +58,7 @@
         android:layout_marginTop="240dp"
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
-        android:background="@drawable/shapepassword"
+        android:background="@drawable/selector_edittext"
         android:inputType="phone"
         android:padding="10dp"
         android:drawableLeft="@drawable/ic_phone"
@@ -74,7 +74,7 @@
         android:layout_marginTop="305dp"
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
-        android:background="@drawable/shapepassword"
+        android:background="@drawable/selector_edittext"
         android:inputType="textEmailAddress"
         android:padding="10dp"
         android:drawableLeft="@drawable/ic_email_register"
@@ -90,7 +90,7 @@
         android:layout_marginTop="360dp"
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
-        android:background="@drawable/shapepassword"
+        android:background="@drawable/selector_edittext"
         android:inputType="textPassword"
         android:padding="10dp"
         android:drawableLeft="@drawable/ic_showpass"

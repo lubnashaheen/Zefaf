@@ -6,6 +6,7 @@
     android:padding="10dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
     android:orientation="horizontal">
 
     <TextView
@@ -43,7 +44,7 @@
         android:layout_width="51dp"
         android:layout_height="14dp"
         android:layout_marginStart="8dp"
-        android:text="venue name"
+        android:text="الصالة"
         android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/txtResTime" />
@@ -53,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="address"
+        android:text="العنوان"
         android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/txtVenueName" />

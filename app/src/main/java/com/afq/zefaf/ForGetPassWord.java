@@ -46,7 +46,7 @@ public class ForGetPassWord extends AppCompatActivity {
                             if(task.isSuccessful())
                             {
                                 firebaseAuth.signOut();
-                                startActivity(new Intent(getApplicationContext(),SignUPAct.class));
+                                startActivity(new Intent(getApplicationContext(), SignInActivity.class));
                                 Toast.makeText(getApplicationContext(),"Password Reset Code sent to your email",Toast.LENGTH_SHORT).show();
                             }
                             else{

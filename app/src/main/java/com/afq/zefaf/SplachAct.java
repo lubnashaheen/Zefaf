@@ -19,7 +19,7 @@ public class SplachAct extends AppCompatActivity {
             public void run() {
                 try {
                     sleep(2000);
-                    Intent intent = new Intent(getApplicationContext(), ActivityMap.class);
+                    Intent intent = new Intent(getApplicationContext(), LoginAct.class);
                     startActivity(intent);
                     finish();
                 } catch (InterruptedException e) {

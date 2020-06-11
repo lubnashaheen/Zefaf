@@ -1,6 +1,7 @@
 package com.afq.zefaf;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -10,8 +11,10 @@ import android.widget.TextView;
 import com.afq.zefaf.Adapter.CustomListAdapter;
 import com.afq.zefaf.Model.MenuItems;
 
+import java.net.URI;
 import java.util.ArrayList;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -22,6 +25,8 @@ public class ProfileInfo extends AppCompatActivity {
     private TextView mTxtUserName;
     private TextView mTxtUserEmail;
     private ListView mLv;
+    Uri uri;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +40,32 @@ public class ProfileInfo extends AppCompatActivity {
 
         MenuList();
 
+        mProfileImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_PICK);
+                intent.setType("image/*");
+                startActivityForResult(intent, 0);
+            }
+        });
+
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent intent) {
+        super.onActivityResult(requestCode, resultCode, intent);
+        if (requestCode == 0) {
+            if (resultCode == RESULT_OK) {
+                if (intent != null) {
+
+                    uri = intent.getData();
+                    mProfileImage.setImageURI(uri);
+                }
+            }
+        }
+
+    }
+
 
     public void MenuList() {
 

@@ -1,22 +1,37 @@
 package com.afq.zefaf.Model;
 
+import com.google.firebase.database.Exclude;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class Bookmark {
 
     private int venuePic;
     private String venueName;
     private String venueAddress;
     private String venueRating;
-    private boolean isBookmark;
 
     public Bookmark() {
     }
 
-    public Bookmark(int venuePic, String venueName, String venueAddress, String venueRating, boolean isBookmark) {
+    public Bookmark(int venuePic, String venueName, String venueAddress, String venueRating) {
         this.venuePic = venuePic;
         this.venueName = venueName;
         this.venueAddress = venueAddress;
         this.venueRating = venueRating;
-        this.isBookmark = isBookmark;
+    }
+
+
+    @Exclude
+    public Map<String, Object> toMap() {
+        HashMap<String, Object> result = new HashMap<>();
+        result.put("venuePic", venuePic);
+        result.put("venueName", venueName);
+        result.put("venueAddress", venueAddress);
+        result.put("venueRating", venueRating);
+
+        return result;
     }
 
     public int getVenuePic() {
@@ -51,11 +66,4 @@ public class Bookmark {
         this.venueRating = venueRating;
     }
 
-    public boolean isBookmark() {
-        return isBookmark;
-    }
-
-    public void setFave(boolean fave) {
-        isBookmark = fave;
-    }
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layoutDirection="ltr"
-    tools:context=".SignUPAct">
+    tools:context=".SignInActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -63,10 +63,10 @@
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
         android:inputType="phone"
-        android:textDirection="rtl"
+        android:textDirection="ltr"
         android:padding="10dp"
         android:drawableLeft="@drawable/ic_phone"
-        android:background="@drawable/shape2"
+        android:background="@drawable/selector_edittext"
         android:hint="+97059925365" />
 
     <TextView
@@ -92,7 +92,7 @@
         android:layout_marginTop="270dp"
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
-        android:background="@drawable/shapepassword"
+        android:background="@drawable/selector_edittext"
         android:inputType="textPassword"
         android:padding="10dp"
         android:drawableLeft="@drawable/ic_showpass"

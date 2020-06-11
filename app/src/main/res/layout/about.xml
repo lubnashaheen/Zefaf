@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layoutDirection="rtl"
     tools:context=".About">
 
 
@@ -24,12 +25,6 @@
         android:layout_height="match_parent"
         android:layout_margin="20dp"
         android:textSize="15sp"
-        android:text="ojiwekoefklejnfkldfldjnvlkdjf;lfd
-
-dfhsdoifhdoifheifhrjefioehfiouoi9hoiuoihuoiuoiu
-kujhgloiuybiouyiuyopiujoiujiojuboiujoipbbuiouo;ui;9vihui
-.,a xmn.ael'[pworjheuighfkiyiuhknlkjgoirgj'p;toirkjokp'thk;'kejhfoiwe
-j
-" />
+        android:text="@string/about_us_txt" />
 
 </LinearLayout>

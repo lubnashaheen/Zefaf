@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     android:paddingStart="5dp"
     android:paddingTop="10dp"
+    android:layoutDirection="rtl"
     android:paddingBottom="10dp">
 
     <ImageView
@@ -29,6 +30,6 @@
         android:id="@+id/arrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_chevron_right_black_24dp" />
+        android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
 
 </LinearLayout>

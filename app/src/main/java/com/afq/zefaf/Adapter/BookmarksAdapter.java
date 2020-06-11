@@ -46,7 +46,7 @@ public class BookmarksAdapter extends RecyclerView.Adapter<BookmarksAdapter.Book
     @Override
     public void onBindViewHolder(@NonNull BookmarkViewHolder holder, int position) {
         Bookmark bm = bookmarks.get(position);
-        //set yo shit
+
         holder.mImgVenueImage.setImageResource(bm.getVenuePic());
         holder.mTextView9.setText(bm.getVenueRating());
         holder.mTxtVenueAddress.setText(bm.getVenueAddress());

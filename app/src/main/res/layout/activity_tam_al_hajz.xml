@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layoutDirection="rtl"
     tools:context=".TamAlHajz">
 
 
@@ -63,7 +64,7 @@
         android:layout_height="71dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:background="@drawable/shape2"
+        android:background="@drawable/selector_edittext"
         android:backgroundTint="#f52d56"
         android:text="حجوزاتي"
 

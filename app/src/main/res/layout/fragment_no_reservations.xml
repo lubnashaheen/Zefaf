@@ -8,6 +8,7 @@
     android:orientation="vertical"
     android:padding="50dp"
     android:gravity="center"
+    android:layoutDirection="rtl"
     tools:context=".Fragments.NoReservationsFragment">
 
 
@@ -34,6 +35,6 @@
         android:text="Start Now"
         android:textColor="@color/white"
         android:textAllCaps="false"
-        android:background="@drawable/shape2"
+        android:background="@drawable/selector_edittext"
         android:backgroundTint="@color/accent"/>
 </LinearLayout>

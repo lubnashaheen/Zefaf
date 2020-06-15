@@ -52,6 +52,15 @@
             android:textSize="12dp"
             android:textStyle="normal" />
 
+        <TextView
+            android:id="@+id/txtEditProfileInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            android:textColor="@color/accent"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+
     </LinearLayout>
 
 

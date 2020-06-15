@@ -1,5 +1,6 @@
 package com.afq.zefaf.Adapter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,8 +8,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.afq.zefaf.BookmarksActivity;
+import com.afq.zefaf.HajsALan;
 import com.afq.zefaf.Model.Hajz;
 import com.afq.zefaf.Onhijzclicklistener;
 import com.afq.zefaf.R;
@@ -68,4 +72,7 @@ public class HajzAdapter extends RecyclerView.Adapter<HajzAdapter.Hajzviewholder
 
         }
     }
+
+
+
 }

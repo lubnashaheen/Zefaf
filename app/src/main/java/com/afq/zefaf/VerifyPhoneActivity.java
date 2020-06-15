@@ -17,6 +17,7 @@ import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 
@@ -69,6 +70,7 @@ public class VerifyPhoneActivity extends AppCompatActivity {
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
         @Override
         public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
             String code = phoneAuthCredential.getSmsCode();
 
@@ -76,6 +78,11 @@ public class VerifyPhoneActivity extends AppCompatActivity {
                 editTextCode.setText(code);
 
                 verifyVerificationCode(code);
+
+                if (user != null) {
+                    user.updatePhoneNumber(phoneAuthCredential);
+                }
+
             }
         }
 
@@ -88,15 +95,20 @@ public class VerifyPhoneActivity extends AppCompatActivity {
         public void onCodeSent(String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
             super.onCodeSent(s, forceResendingToken);
 
-
             mVerificationId = s;
         }
     };
 
     private void verifyVerificationCode(String code) {
 
-        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(mVerificationId, code);
-        signInWithPhoneAuthCredential(credential);
+        try {
+            PhoneAuthCredential credential = PhoneAuthProvider.getCredential(mVerificationId, code);
+            signInWithPhoneAuthCredential(credential);
+        }catch (Exception e){
+            Toast toast = Toast.makeText(this, "Verification Code is wrong", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+
     }
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
         mAuth.signInWithCredential(credential)

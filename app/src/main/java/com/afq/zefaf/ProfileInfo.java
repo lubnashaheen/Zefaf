@@ -11,7 +11,6 @@ import android.widget.TextView;
 import com.afq.zefaf.Adapter.CustomListAdapter;
 import com.afq.zefaf.Model.MenuItems;
 
-import java.net.URI;
 import java.util.ArrayList;
 
 import androidx.annotation.Nullable;
@@ -26,6 +25,7 @@ public class ProfileInfo extends AppCompatActivity {
     private TextView mTxtUserEmail;
     private ListView mLv;
     Uri uri;
+    private TextView txtEditProfileInfo;
 
 
     @Override
@@ -37,6 +37,15 @@ public class ProfileInfo extends AppCompatActivity {
         mTxtUserName = findViewById(R.id.txtUserName);
         mTxtUserEmail = findViewById(R.id.txtUserEmail);
         mLv = findViewById(R.id.lv);
+        txtEditProfileInfo = findViewById(R.id.txtEditProfileInfo);
+
+        txtEditProfileInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfileInfo.this,EditProfileInfo.class);
+                startActivity(intent);
+            }
+        });
 
         MenuList();
 

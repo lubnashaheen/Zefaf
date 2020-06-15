@@ -6,7 +6,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import com.afq.zefaf.Adapter.BookmarksAdapter;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 public class ActivityMap extends AppCompatActivity {
 

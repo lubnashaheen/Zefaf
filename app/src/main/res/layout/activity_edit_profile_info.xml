@@ -7,27 +7,27 @@
     android:layoutDirection="rtl"
     tools:context=".Regster">
 
-    <ImageView
-        android:id="@+id/imageViewlogo"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo2"
-        tools:layout_editor_absoluteY="38dp" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pic"
+        app:civ_border_color="#00000000"
+        app:civ_border_width="0dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignTop="@id/profile_image"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="110dp"
-        android:text="@string/create_new_account"
+        android:text="@string/edit_profile_info"
         android:textColor="#3D1458"
         android:textStyle="bold"
         android:textSize="20sp"/>
-
 
 
     <EditText
@@ -36,33 +36,31 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="170dp"
-        android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
-        android:inputType="textPersonName"
-        android:textDirection="rtl"
-        android:padding="10dp"
-        android:drawableStart="@drawable/ic_person"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="15dp"
         android:background="@drawable/selector_edittext"
-        android:hint="@string/full_name" />
-
-
+        android:drawableStart="@drawable/ic_person"
+        android:hint="@string/full_name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textDirection="rtl" />
 
     <EditText
         android:id="@+id/editphone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="end"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="240dp"
-        android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
+        android:layout_marginTop="243dp"
+        android:layout_marginEnd="15dp"
         android:background="@drawable/selector_edittext"
-        android:inputType="phone"
-        android:padding="10dp"
         android:drawableStart="@drawable/ic_phone"
-        android:hint="@string/mobile_number" />
+        android:gravity="end"
+        android:hint="@string/mobile_number"
+        android:inputType="phone"
+        android:padding="10dp" />
 
     <EditText
         android:id="@+id/editemail"
@@ -80,22 +78,6 @@
         android:drawableStart="@drawable/ic_email_register"
         android:hint="@string/email_address" />
 
-    <EditText
-        android:id="@+id/editpassword"
-        android:textDirection="rtl"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="end"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="360dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginStart="15dp"
-        android:background="@drawable/selector_edittext"
-        android:inputType="textPassword"
-        android:padding="10dp"
-        android:drawableStart="@drawable/ic_showpass"
-        android:hint="@string/password" />
 
     <Button
         android:id="@+id/buttonlogin"
@@ -108,7 +90,7 @@
         android:layout_marginEnd="18dp"
         android:layout_marginBottom="55dp"
         android:background="@drawable/shape"
-        android:text="@string/sign_in_txt"
+        android:text="@string/edit_btn"
         android:textColor="#fff"
         android:textSize="20sp"
         android:textStyle="bold" />

@@ -31,7 +31,7 @@ public class SignInActivity extends AppCompatActivity {
 
     private ProgressBar progressBar;
     FirebaseAuth mAuth;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,10 +49,7 @@ public class SignInActivity extends AppCompatActivity {
         mButtonlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                {
-                    userlogin();
-                }
-
+                userlogin();
             }
         });
 
@@ -72,7 +69,7 @@ public class SignInActivity extends AppCompatActivity {
             }
         });
 
-        progressBar  = findViewById(R.id.progressbar);
+        progressBar = findViewById(R.id.progressbar);
     }
 
     private void userlogin() {

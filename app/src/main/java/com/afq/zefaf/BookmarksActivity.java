@@ -2,6 +2,7 @@ package com.afq.zefaf;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.afq.zefaf.Adapter.BookmarksAdapter;
@@ -13,7 +14,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
-import java.util.Map;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -54,34 +54,23 @@ public class BookmarksActivity extends AppCompatActivity {
 
         mExampleList = new ArrayList<>();
 
-
-        mExampleList.add(new Bookmark(R.drawable.pic, "venue 1", "address", "4"));
-        mExampleList.add(new Bookmark(R.drawable.pic, "venue 2", "address", "4"));
-        mExampleList.add(new Bookmark(R.drawable.pic, "venue 3", "address", "4"));
-
         myRef.child("Bookmark").push().setValue(new Bookmark(R.drawable.pic, "venue 1", "address", "4"));
+        myRef.child("Bookmark").push().setValue(new Bookmark(R.drawable.pic, "venue 2", "address 2", "4"));
 
         myRef.child("Bookmark").addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 Toast.makeText(BookmarksActivity.this, "added", Toast.LENGTH_SHORT).show();
+                Bookmark bkm = dataSnapshot.getValue(Bookmark.class);
 
                 for (DataSnapshot snap : dataSnapshot.getChildren()) {
 
-                    Bookmark bkm =  snap.getValue(Bookmark.class);
-
-                    if (bkm != null) {
-
-                        String VenueName = bkm.getVenueName();
-                        String VenueAddress = bkm.getVenueAddress();
-//                      bkm.getVenuePic();
-                        String VenueRating = bkm.getVenueRating();
-
-                        mExampleList.add(new Bookmark(R.drawable.pic, VenueName, VenueAddress, VenueRating));
 
 
-                    }
+
                 }
+                               mExampleList.add(bkm);
+
             }
 
             @Override
@@ -116,6 +105,7 @@ public class BookmarksActivity extends AppCompatActivity {
         mAdapter = new BookmarksAdapter(mExampleList);
         mBookmarksRecyclerView.setLayoutManager(mLayoutManager);
         mBookmarksRecyclerView.setAdapter(mAdapter);
+
         mAdapter.setOnItemClickListener(new BookmarksAdapter.OnItemClickListener() {
             @Override
             public void OnItemClick(int position) {

@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"
-        android:textSize="15sp"
+        android:textSize="22sp"
         android:text="@string/about_us_txt" />
 
 </LinearLayout>
